@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How Much of Weeb Are You?</title>
+  <script src="js/conditions.js" defer></script>
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      font-size: 24px;
+    }
+
+    label, input, option, select {
+      display: block;
+      margin: 1rem;
+      font-size: 24px;
+    }
+
+    label {
+      display: flex;
+      flex-direction: column;
+    }
+
+    button {
+      padding: 1rem;
+      font-size: 24px;
+      border-radius: 7px;
+      color: white;
+      background-color: #F24C00;
+      
+    }
+  </style>
+</head>
+<body>
+  <form action="">
+    <fieldset>
+      <legend>Anime Fan Meter:</legend>
+        <label for="amount">
+          <span>Amount of Anime watched: </span>
+          <select name="amount" id="amount">
+            <option value="">Select One</option>
+            <option value="1-5">Around 1-5</option>
+            <option value="5-20">Somewhere between 5-20</option>
+            <option value="20-50">Around 20-50</option>
+            <option value="50+">I stopped counting after 50</option>
+          </select>
+        </label>
+        <button type="submit" class="weeb-calc">Calculate Weeb Level</button>
+        <h2><output id="output"></output></h2>
+    </fieldset>
+  </form>
+</body>
+</html>
